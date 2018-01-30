@@ -31,10 +31,7 @@ module ContentfulRails
                   :space,
                   :default_locale,
                   :contentful_options,
-                  :preview_username,
-                  :preview_password,
-                  :preview_domain,
-                  :enable_preview_domain,
+                  :enable_preview_flag,
                   :eager_load_entry_mapping
 
     def initialize

@@ -15,7 +15,7 @@ module ContentfulRails
     # Check whether the query param 'preview' is set
     def check_preview_flag
       # If enable_preview_domain is not enabled, explicitly set use_preview_api false and return
-      ContentfulModel.use_preview_api = request.query_parameters['preview'] != "f"
+      ContentfulModel.use_preview_api = request.query_parameters['preview'] and request.query_parameters['preview'] != "f"
     end
 
     # If we're in preview mode, we need to remove the preview view caches which were created.
